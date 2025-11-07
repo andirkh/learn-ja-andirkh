@@ -25,6 +25,8 @@ rumah haru san ada dimana?
 
 # Hiragana + Katakana Paired Table (with Romaji)
 
+remember this -> A-KA-SA-TA-NA-HA-MA-YA-RA-WA-N 🎵
+
 ## 1. Basic Gojūon (清音)
 |      | a              | i               | u                | e              | o              |
 |------|----------------|-----------------|------------------|----------------|----------------|

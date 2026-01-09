@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilingual CSV Reader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .japanese-text {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .drop-zone {
+            transition: all 0.3s ease;
+            border: 2px dashed #cbd5e1;
+        }
+
+        .drop-zone.dragover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <header class="mb-8 text-center">
+            <h1 class="text-3xl font-bold text-slate-800 mb-2">🇯🇵 Reader</h1>
+            <p class="text-slate-600">Upload a CSV with "ja" and "en" columns to get started. find the example in /transcript/*csv</p>
+        </header>
+
+        <!-- Upload Section -->
+        <div id="uploadContainer" class="mb-10">
+            <div id="dropZone" class="drop-zone rounded-2xl p-10 text-center cursor-pointer bg-white">
+                <input type="file" id="csvInput" accept=".csv" class="hidden">
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-file-csv text-3xl"></i>
+                    </div>
+                    <p class="text-lg font-medium text-slate-700">Click or drag CSV file here</p>
+                    <p class="text-sm text-slate-400 mt-1">Columns required: ja, en</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notification Area -->
+        <div id="notification" class="hidden mb-6 p-4 rounded-lg text-center font-medium"></div>
+
+        <!-- Content Area -->
+        <div id="contentList" class="space-y-4">
+            <!-- Cards will be injected here -->
+        </div>
+
+        <!-- Empty State -->
+        <div id="emptyState" class="text-center py-20 text-slate-400">
+            <i class="fas fa-layer-group text-5xl mb-4 block"></i>
+            <p>No content loaded yet</p>
+        </div>
+    </div>
+
+    <script>
+        const csvInput = document.getElementById('csvInput');
+        const dropZone = document.getElementById('dropZone');
+        const contentList = document.getElementById('contentList');
+        const emptyState = document.getElementById('emptyState');
+        const notification = document.getElementById('notification');
+
+        // Drag and Drop Logic
+        dropZone.addEventListener('click', () => csvInput.click());
+        
+        dropZone.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            dropZone.classList.add('dragover');
+        });
+
+        dropZone.addEventListener('dragleave', () => {
+            dropZone.classList.remove('dragover');
+        });
+
+        dropZone.addEventListener('drop', (e) => {
+            e.preventDefault();
+            dropZone.classList.remove('dragover');
+            const file = e.dataTransfer.files[0];
+            if (file && file.name.endsWith('.csv')) {
+                processFile(file);
+            } else {
+                showNotification('Please upload a valid CSV file.', 'error');
+            }
+        });
+
+        csvInput.addEventListener('change', (e) => {
+            if (e.target.files.length > 0) {
+                processFile(e.target.files[0]);
+            }
+        });
+
+        function showNotification(message, type) {
+            notification.textContent = message;
+            notification.className = `block mb-6 p-4 rounded-lg text-center font-medium ${
+                type === 'error' ? 'bg-red-50 text-red-600' : 'bg-green-50 text-green-600'
+            }`;
+            setTimeout(() => {
+                notification.classList.add('hidden');
+            }, 3000);
+        }
+
+        async function processFile(file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const text = e.target.result;
+                const rows = parseCSV(text);
+                if (rows.length > 0) {
+                    renderContent(rows);
+                    showNotification(`Successfully loaded ${rows.length} entries.`, 'success');
+                } else {
+                    showNotification('No valid data found. Check column headers (ja, en).', 'error');
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        function parseCSV(text) {
+            const lines = text.split(/\r?\n/).filter(line => line.trim() !== "");
+            if (lines.length < 2) return [];
+
+            const headers = lines[0].split(',').map(h => h.trim().toLowerCase());
+            const jaIndex = headers.indexOf('ja');
+            const enIndex = headers.indexOf('en');
+
+            if (jaIndex === -1 || enIndex === -1) return [];
+
+            const results = [];
+            // Basic CSV parser (handles simple commas, doesn't handle quoted commas for simplicity)
+            for (let i = 1; i < lines.length; i++) {
+                const cols = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/); // Regex to handle commas inside quotes
+                if (cols[jaIndex] && cols[enIndex]) {
+                    results.push({
+                        ja: cols[jaIndex].replace(/^"|"$/g, '').trim(),
+                        en: cols[enIndex].replace(/^"|"$/g, '').trim()
+                    });
+                }
+            }
+            return results;
+        }
+
+        function renderContent(items) {
+            contentList.innerHTML = '';
+            emptyState.classList.add('hidden');
+
+            items.forEach((item, index) => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-xl p-6 card-shadow flex items-start gap-4 hover:translate-x-1 transition-transform';
+                
+                card.innerHTML = `
+                    <div class="flex-grow">
+                        <div class="japanese-text text-2xl font-bold text-slate-800 mb-2 leading-tight">${item.ja}</div>
+                        <div class="text-sm text-slate-500 font-medium">${item.en}</div>
+                    </div>
+                    <button class="speak-btn w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-blue-50 hover:text-blue-500 transition-colors" 
+                            title="Speak Japanese" 
+                            data-text="${item.ja.replace(/"/g, '&quot;')}">
+                        <i class="fas fa-volume-up text-xl"></i>
+                    </button>
+                `;
+                contentList.appendChild(card);
+            });
+
+            // Add event listeners for speech
+            document.querySelectorAll('.speak-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    speakJapanese(btn.getAttribute('data-text'), btn);
+                });
+            });
+        }
+
+        function speakJapanese(text, btn) {
+            if (!('speechSynthesis' in window)) {
+                showNotification('Your browser does not support Speech Synthesis.', 'error');
+                return;
+            }
+
+            // Cancel any current speech
+            window.speechSynthesis.cancel();
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ja-JP';
+            utterance.rate = 0.9; // Slightly slower for clarity
+            
+            // Visual feedback
+            btn.classList.add('bg-blue-100', 'text-blue-600');
+            btn.classList.remove('bg-slate-50', 'text-slate-400');
+
+            utterance.onend = () => {
+                btn.classList.remove('bg-blue-100', 'text-blue-600');
+                btn.classList.add('bg-slate-50', 'text-slate-400');
+            };
+
+            utterance.onerror = (event) => {
+                console.error('SpeechSynthesis error:', event);
+                btn.classList.remove('bg-blue-100', 'text-blue-600');
+                btn.classList.add('bg-slate-50', 'text-slate-400');
+            };
+
+            // Try to find a Japanese voice
+            const voices = window.speechSynthesis.getVoices();
+            const jaVoice = voices.find(v => v.lang.startsWith('ja'));
+            if (jaVoice) utterance.voice = jaVoice;
+
+            window.speechSynthesis.speak(utterance);
+        }
+
+        // Voice initialization fix for Chrome
+        window.speechSynthesis.getVoices();
+    </script>
+</body>
+</html>

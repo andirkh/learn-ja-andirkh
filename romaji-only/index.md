@@ -310,6 +310,98 @@ Zero: Usually zero (ゼロ) or rei (零) in formal contexts (e.g., phone numbers
 - ほうき,Houki,Sapu lidi 🧹  
 - 電池,Denchi,Baterai 🔋
 
+## Kata keterangan waktu :
+
+夕方　Yuugata　Sore (menjelang malam)
+
+夜　Yoru　Malam hari
+
+今　Ima　Sekarang
+
+後で　Ato de　Nanti / Setelah ini
+
+先に　Saki ni　Sebelumnya
+
+contoh : 
+
+Kinou, gohan o tabemashita. (Kemarin, saya sudah makan nasi.)
+
+Ashita, koohii o nomimasu. (Besok, saya akan minum kopi.)
+
+### contoh contoh kata keterangan waktu 
+
+- 昨日	Kinou	Kemarin
+
+- 今日	Kyou	Hari ini
+
+- 明日	Ashita	Besok
+
+- 今朝	Kesa	Tadi pagi
+
+- 晩	Ban	Malam
+
+- 今週　Konshuu　Minggu ini
+
+- 来週　Raishuu　Minggu depan
+
+- 先週　Senshuu　Minggu lalu
+
+- 今月　Kongetsu　Bulan ini
+
+- 来月　Raigetsu　Bulan depan
+
+- 先月　Sengetsu　Bulan lalu
+
+- 今年　Kotoshi　Tahun ini
+
+- 来年　Rainen　Tahun depan
+
+- 去年　Kyonen　Tahun lalu
+
+- 朝　Asa　Pagi
+
+- 昼　Hiru　Siang
+
+- 今頃　Ima goro　Sekitar sekarang ini  
+
+- さっき　Sakki　Baru saja (tadi)  
+
+- ちょっと前　Chotto mae　Beberapa saat yang lalu  
+
+- あとで　Ato de　Nanti (setelah ini)  
+
+- すぐ　Sugu　Segera / Langsung  
+
+- もうすぐ　Mou sugu　Sebentar lagi  
+
+- いつ　Itsu　Kapan  
+
+- いつも　Itsumo　Selalu  
+
+- たまに　Tamani　Kadang-kadang  
+
+- よく　Yoku　Sering  
+
+- 毎日　Mainichi　Setiap hari  
+
+- 毎週　Mai shuu　Setiap minggu  
+
+- 毎月　Mai getsu　Setiap bulan  
+
+- 毎年　Mai nen　Setiap tahun  
+
+- 朝ごはんの時　Asa gohan no toki　Saat sarapan  
+
+- 寝る前　Neru mae　Sebelum tidur  
+
+- 起きたら　Okita ra　Kalau sudah bangun  
+
+- 出かけるとき　Dekakeru toki　Saat pergi keluar  
+
+- 今夜　Kon'ya　Malam ini  
+
+- 今晩　Konban　Malam ini (lebih formal/sopan)  
+
 
 ## kata sifat (keiyoushi)
 
@@ -680,7 +772,7 @@ Kare wa terebi o mimasen deshita.
 99. 追います — Oimasu — Mengejar  
 100. 待ち合わせます — Machiawasemasu — Janjian bertemu  
 
-### kata kerja bentuk -te
+### ~te (minta tolong atau minta melakukan sesuatu)
 
 meminta tolong atau menyatakan sedang melakukan sesuatu.
 
@@ -716,95 +808,143 @@ Pengecualian Penting: Kata kerja Ikimasu (Pergi) berakhiran ~ki, tapi perubahann
 | Mimasu               | Mite             | Mite imasu                 | Sedang menonton      |
 | Benkyou shimasu      | Benkyou shite    | Benkyou shite imasu        | Sedang belajar       |
 
-## Kata keterangan waktu :
+Watashi wa gohan o tabete imasu. (Saya sedang makan nasi.)
 
-夕方　Yuugata　Sore (menjelang malam)
+Tanaka-san wa terebi o mite imasu. (Pak Tanaka sedang menonton TV.)
 
-夜　Yoru　Malam hari
+### ~tai desu (Menyatakan Keinginan)
 
-今　Ima　Sekarang
+cukup mengambil kata kerja bentuk ~masu, buang masu-nya, lalu ganti dengan tai desu.
 
-後で　Ato de　Nanti / Setelah ini
+| Bentuk Sopan | Buang ~masu | Bentuk Ingin (~tai) | Bahasa Indonesia |
+|--------------|-------------|----------------------|------------------|
+| Tabemasu     | Tabe        | Tabetai desu         | Ingin makan      |
+| Nomimasu     | Nomi        | Nomitai desu         | Ingin minum      |
+| Ikimasu      | Iki         | Ikitai desu          | Ingin pergi      |
+| Kaimasu      | Kai         | Kaitai desu          | Ingin membeli    |
 
-先に　Saki ni　Sebelumnya
+Watashi wa Nihon e ikitai desu. (Saya ingin pergi ke Jepang.)
 
-contoh : 
+Atarashii kuruma ga kaitai desu. (Ingin membeli mobil baru.)
 
-Kinou, gohan o tabemashita. (Kemarin, saya sudah makan nasi.)
+### ~nai de kudasai (Bentuk Larangan)
 
-Ashita, koohii o nomimasu. (Besok, saya akan minum kopi.)
+Untuk mengatakan "Tolong jangan..." atau "Mohon jangan...", kita menggunakan pola ~nai de kudasai. Sebelum menggunakan pola ini, kamu harus mengenal Bentuk Nai (Bentuk negatif dasar).
 
-### contoh contoh kata keterangan waktu 
+| Kelompok | Aturan Perubahan                                      | Contoh (Masu → Nai)     |
+|----------|--------------------------------------------------------|--------------------------|
+| Grup 2   | Buang ~masu, tambah ~nai                              | Tabemasu → Tabenai       |
+|          |                                                        | Mimasu → Minai           |
+| Grup 1   | Ubah bunyi -i menjadi -a, tambah ~nai                 | Kakimasu → Kakanai       |
+|          |                                                        | Nomimasu → Nomanai       |
+|          | Khusus akhiran "i" berubah menjadi "wa"               | Aimasu → Awanai          |
+| Grup 3   | Hapalan (Irregular)                                   | Shimasu → Shinai         |
 
-- 昨日	Kinou	Kemarin
+Tabenai + de kudasai = Tabenai de kudasai (Mohon jangan makan)
 
-- 今日	Kyou	Hari ini
+Nomanai + de kudasai = Nomanai de kudasai (Mohon jangan minum)
 
-- 明日	Ashita	Besok
+Ikanai + de kudasai = Ikanai de kudasai (Mohon jangan pergi)
 
-- 今朝	Kesa	Tadi pagi
+Watashi no sushi o tabenai de kudasai.	私の寿司を食べないでください。	Tolong jangan makan sushi saya.
 
-- 晩	Ban	Malam
+Ashita wa kaisha ni ikanai de kudasai.	明日は会社に行かないでください。	Besok tolong jangan pergi ke kantor.
 
-- 今週　Konshuu　Minggu ini
+Wasurenai de kudasai.	忘れないでください。	Tolong jangan lupa.
 
-- 来週　Raishuu　Minggu depan
+Hanasanai de kudasai.	話さないでください。	Tolong jangan bicara.
 
-- 先週　Senshuu　Minggu lalu
+### ~ta koto ga arimasu (Menyatakan Pengalaman)
 
-- 今月　Kongetsu　Bulan ini
+sekarang kita akan belajar cara mengatakan "Pernah melakukan sesuatu".
 
-- 来月　Raigetsu　Bulan depan
+| Bentuk ~TE (N5) | Bentuk ~TA (N4) | Arti     |
+|------------------|------------------|----------|
+| Tabete           | Tabeta           | Makan    |
+| Nonde            | Nonda            | Minum    |
+| Itte             | Itta             | Pergi    |
+| Kaite            | Kaita            | Menulis  |
 
-- 先月　Sengetsu　Bulan lalu
+```
+[Bentuk ~TA] + koto ga arimasu
+```
 
-- 今年　Kotoshi　Tahun ini
+Tabeta koto ga arimasu. (Pernah makan.) 🍣
 
-- 来年　Rainen　Tahun depan
+Itta koto ga arimasu. (Pernah pergi.) ✈️
 
-- 去年　Kyonen　Tahun lalu
+### ~hou ga ii desu (memberikan saran, sebaiknya ...)
 
-- 朝　Asa　Pagi
+```
+Saran Positif (Sebaiknya melakukan): [Kata Kerja Bentuk ~TA] + hou ga ii desu.
+```
 
-- 昼　Hiru　Siang
+```
+Saran Negatif (Sebaiknya tidak melakukan): [Kata Kerja Bentuk ~NAI] + hou ga ii desu.
+```
 
-- 今頃　Ima goro　Sekitar sekarang ini  
+行ったほうがいいです	Itta hou ga ii desu	Sebaiknya pergi
 
-- さっき　Sakki　Baru saja (tadi)  
+食べないほうがいいです	Tabenai hou ga ii desu	Sebaiknya jangan makan
 
-- ちょっと前　Chotto mae　Beberapa saat yang lalu  
+薬を飲む	Kusuri o nomu	Minum obat
 
-- あとで　Ato de　Nanti (setelah ini)  
+Sake o nomanai hou ga ii desu. (Sebaiknya jangan minum sake.)
 
-- すぐ　Sugu　Segera / Langsung  
+Kusuri o nonda hou ga ii desu. (Sebaiknya minum obat.)
 
-- もうすぐ　Mou sugu　Sebentar lagi  
+### bisa melakukan sesuatu (CAN/BISA)
 
-- いつ　Itsu　Kapan  
+| Grup | Aturan Perubahan                                      | Contoh (Bentuk Sopan → Bentuk Potensial)        | Arti (→ Arti Potensial)              |
+|------|--------------------------------------------------------|--------------------------------------------------|---------------------------------------|
+| Grup 1 | Ubah bunyi **-i** sebelum ~masu menjadi **-e**       | Ikimasu → Ikemasu                                | Pergi → Bisa pergi                   |
+|      |                                                        | Nomimasu → Nomemasu                              | Minum → Bisa minum                   |
+|      |                                                        | Kaimasu → Kaemasu                                | Membeli → Bisa membeli               |
+| Grup 2 | Buang ~masu, ganti dengan **~raremasu**               | Tabemasu → Taberaremasu                          | Makan → Bisa makan                   |
+|      |                                                        | Mimasu → Miraremasu                              | Melihat → Bisa melihat               |
+| Grup 3 (Hafalan) | Bentuk tidak beraturan (irregular)          | Shimasu → Dekimasu                               | Melakukan → Bisa melakukan           |
+|      |                                                        | Kimasu → Koraremasu                              | Datang → Bisa datang                 |
 
-- いつも　Itsumo　Selalu  
+**Catatan Partikel**: Saat menggunakan bentuk potensial, partikel **o (を)** biasanya berubah menjadi **ga (が)**.  
 
-- たまに　Tamani　Kadang-kadang  
+Contoh: *Sushi ga taberaremasu.* (Bisa makan sushi.)
 
-- よく　Yoku　Sering  
+Byouki desu kara, neta hou ga ii desu. (Karena sakit, sebaiknya tidur.)
 
-- 毎日　Mainichi　Setiap hari  
+Karai tabemono o tabenai hou ga ii desu. (Sebaiknya jangan makan makanan pedas.)
 
-- 毎週　Mai shuu　Setiap minggu  
+Watashi wa Nihongo ga hanasemasu. (Saya bisa bicara bahasa Jepang.)
 
-- 毎月　Mai getsu　Setiap bulan  
+### ~tagatte iru (Keinginan Orang Lain)
 
-- 毎年　Mai nen　Setiap tahun  
+Rumus: Buang ~masu, tambah ~tagatte iru.
 
-- 朝ごはんの時　Asa gohan no toki　Saat sarapan  
+| Kata Kerja | Subjek: Saya (~tai)                     | Subjek: Orang Lain (~tagatte iru)                     |
+|------------|------------------------------------------|--------------------------------------------------------|
+| Tabemasu   | Tabetai (Ingin makan)                   | Tabetagatte iru (Tampaknya ingin makan)               |
+| Ikimasu    | Ikitai (Ingin pergi)                    | Ikitagatte iru (Tampaknya ingin pergi)                |
 
-- 寝る前　Neru mae　Sebelum tidur  
+Kare wa Nihon e ikitagatte iru. (Dia [tampaknya] ingin pergi ke Jepang.)
 
-- 起きたら　Okita ra　Kalau sudah bangun  
+### ~tara (jika/ kalau)
 
-- 出かけるとき　Dekakeru toki　Saat pergi keluar  
+Rumus: Gunakan Bentuk ~TA (yang sudah kamu pelajari) lalu tambah ~ra.
 
-- 今夜　Kon'ya　Malam ini  
+| Jenis             | Perubahan                          | Contoh                     | Arti             |
+|-------------------|------------------------------------|----------------------------|------------------|
+| Kata Kerja        | Bentuk ~TA + ra                   | Attara (Au ➡️ Atta + ra)  | Jika bertemu     |
+| Kata Sifat -i     | Buang -i, + kattara               | Samukattara                | Jika dingin      |
+| Kata Benda        | + dattara                         | Ame dattara                | Jika hujan       |
 
-- 今晩　Konban　Malam ini (lebih formal/sopan)  
+Nihon e ittara, sushi o tabetai desu. (Kalau pergi ke Jepang, saya ingin makan sushi.)
+
+Samukattara, mado o shimete kudasai. (Kalau dingin, tolong tutup jendelanya.)
+
+Okane ga attara, kuruma o kaitai desu.
+
+Imouto wa chokoreeto o tabetagatte iru.
+
+Ashita ame dattara, kaisha e ikimasen.
+
+Yasukattara, kore o katte kudasai.
 

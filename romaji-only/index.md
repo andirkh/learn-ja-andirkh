@@ -679,6 +679,59 @@ Ganti dengan: **変,Hen,Aneh** ✅
 74. 不安,Fuan,Cemas / Gelisah 😰  
 75. 安心,Anshin,Tenang (perasaan) 😌  
 
+## Adverbs 
+
+1. 多分 – tabun – mungkin  
+2. きっと – kitto – pasti, tentu  
+3. おそらく – osoraku – kemungkinan besar  
+4. もしかして – moshikashite – jangan-jangan  
+5. 絶対に – zettai ni – mutlak, pasti  
+6. 全然 – zenzen – sama sekali (dalam kalimat negatif)  
+7. とても – totemo – sangat  
+8. すごく – sugoku – sangat, luar biasa  
+9. かなり – kanari – cukup, lumayan  
+10. 少し – sukoshi – sedikit  
+11. ちょっと – chotto – sedikit, sebentar  
+12. もう – mou – sudah  
+13. まだ – mada – belum  
+14. いつも – itsumo – selalu  
+15. よく – yoku – sering, baik  
+16. 時々 – tokidoki – kadang-kadang  
+17. たまに – tama ni – sesekali  
+18. ほとんど – hotondo – hampir, hampir semua  
+19. ちょうど – choudo – tepat, persis  
+20. さっき – sakki – tadi (baru saja)  
+21. すぐ – sugu – segera  
+22. すぐに – sugu ni – segera  
+23. あとで – ato de – nanti  
+24. いま – ima – sekarang  
+25. 今すぐ – ima sugu – sekarang juga  
+26. はっきり – hakkiri – jelas  
+27. しっかり – shikkari – dengan mantap, erat  
+28. ゆっくり – yukkuri – perlahan-lahan  
+29. どんどん – dondon – terus-menerus (meningkat)  
+30. どんどんと – dondon to – terus-menerus (dengan penekanan)  
+31. しずかに – shizuka ni – dengan tenang  
+32. はやく – hayaku – cepat  
+33. おそく – osoku – lambat  
+34. ちゃんと – chanto – dengan benar  
+35. だいたい – daitai – kira-kira, umumnya  
+36. まさに – masani – tepatnya, sungguh  
+37. いったい – ittai – sebenarnya (dalam pertanyaan)  
+38. ひょっとして – hyotto shite – jangan-jangan  
+39. まるで – marude – seolah-olah  
+40. 本当に – hontou ni – benar-benar  
+41. 実際に – jissai ni – sebenarnya, secara nyata  
+42. 急に – kyuu ni – tiba-tiba  
+43. ふと – futo – tanpa sengaja, tiba-tiba (dalam pikiran)  
+44. そっと – sotto – dengan lembut/perlahan  
+45. がっかり – gakkari – kecewa  
+46. びっくり – bikkuri – terkejut  
+47. しっかり – shikkari – dengan kuat/tegas  
+48. ぴったり – pittari – pas, cocok persis  
+49. あいかわらず – aikawarazu – seperti biasa  
+50. とっくに – tokku ni – sudah lama  
+
 ## Kata kerja 
 
 kata kerja selalu di akhir kamlimat, dalam bentuk sopan biasanya berakhiran ~masu

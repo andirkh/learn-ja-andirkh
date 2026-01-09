@@ -251,6 +251,66 @@ Age 20, hatachi
 
 Zero: Usually zero (ゼロ) or rei (零) in formal contexts (e.g., phone numbers: zero; temperature: rei-do)
 
+## date 
+
+| Concept     | Kanji         | Romaji (Reading)           | Notes |
+|-------------|---------------|----------------------------|-------|
+| Day (of month) | 日            | **-nichi**                 | Used as a suffix after numbers (e.g., 9日 = kokonoka / kyū-nichi) |
+| Date (full) | 日付          | **hiduke**                 | General word for "date" |
+| Month       | 月            | **-gatsu**                 | Suffix after numbers (e.g., 1月 = ichi-gatsu) |
+| Year        | 年            | **-nen**                   | Suffix after numbers (e.g., 2026年 = nisen-nijūroku-nen) |
+
+### Years
+
+Just say the number + 年 (ねん / nen)
+
+2026年 → にせんにじゅうろくねん
+
+(Literally: two-thousand twenty-six year)
+
+### Months
+
+- Number + 月 (がつ / gatsu)
+- January = 1月 → いちがつ
+- February = 2月 → にがつ
+- March = 3月 → さんがつ
+- April = 4月 → しがつ (note: not "よんがつ")
+- May = 5月 → ごがtsu
+- June = 6月 → ろくがつ
+- July = 7月 → しちがつ (or rarely なながつ)
+- August = 8月 → はちがつ
+- September = 9月 → くがつ (not きゅうがつ)
+- October = 10月 → じゅうがつ
+- November = 11月 → じゅういちがつ
+- December = 12月 → じゅうにがつ
+
+### Dates
+
+| Number | Day (日) – Kanji + Reading      | Month (月) – Kanji + Reading |
+|--------|----------------------------------|------------------------------|
+| 1      | 1日 – **tsuitachi**             | 1月 – **ichigatsu**          |
+| 2      | 2日 – **futsuka**               | 2月 – **nigatsu**            |
+| 3      | 3日 – **mikka**                 | 3月 – **sangatsu**           |
+| 4      | 4日 – **yokka**                 | 4月 – **shigatsu**           |
+| 5      | 5日 – **itsuka**                | 5月 – **gogatsu**            |
+| 6      | 6日 – **muika**                 | 6月 – **rokugatsu**          |
+| 7      | 7日 – **nanoka**                | 7月 – **shichigatsu**        |
+| 8      | 8日 – **yōka**                  | 8月 – **hachigatsu**         |
+| 9      | 9日 – **kokonoka**              | 9月 – **kugatsu**            |
+| 10     | 10日 – **tōka**                 | 10月 – **jūgatsu**           |
+| 11–31  | Use regular number + **-nichi** | (e.g., 11日 = jūichi-nichi) | Months only go up to 12 |
+
+### Example: **January 9, 2026**
+
+In Japanese, dates are written **year → month → day**.
+
+| Format        | Japanese (Kanji/Kana)       | Romaji                          |
+|---------------|-----------------------------|----------------------------------|
+| Full date     | 2026年1月9日                | **nisen nijūroku nen ichigatsu kokonoka** |
+| Alternative (with -nichi) | 2026年1月9日       | **nisen nijūroku nen ichigatsu kyū-nichi** *(less common for 9th)* |
+
+✅ **Preferred**: Use **kokonoka** for the 9th day in natural speech/writing.
+
 ## kosakata benda
 
 - 時計,Tokei,Jam / Jam tangan ⌚  

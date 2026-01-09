@@ -290,3 +290,5 @@ o -> untuk kata sopan
 
 おみやげ　→ oleh2
 
+# Chapter 3
+

@@ -11,7 +11,7 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
+            transition: background-color 0.3s ease;
         }
         
         .japanese-text {
@@ -31,25 +31,36 @@
             border-color: #3b82f6;
             background-color: #eff6ff;
         }
+
+        /* Dark mode overrides for drop-zone */
+        @media (prefers-color-scheme: dark) {
+            .drop-zone {
+                border-color: #475569;
+            }
+            .drop-zone.dragover {
+                background-color: #1e293b;
+                border-color: #3b82f6;
+            }
+        }
     </style>
 </head>
-<body class="min-h-screen p-4 md:p-8">
+<body class="min-h-screen p-4 md:p-8 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100">
     <div class="max-w-4xl mx-auto">
         <!-- Header -->
         <header class="mb-8 text-center">
-            <h1 class="text-3xl font-bold text-slate-800 mb-2">🇯🇵 Reader</h1>
-            <p class="text-slate-600">Upload a CSV with "ja" and "en" columns to get started. find the example in /transcript/*csv</p>
+            <h1 class="text-3xl font-bold mb-2">Bilingual Reader</h1>
+            <p class="text-slate-600 dark:text-slate-400">Upload a CSV with "ja" and "en" columns to get started.</p>
         </header>
 
         <!-- Upload Section -->
         <div id="uploadContainer" class="mb-10">
-            <div id="dropZone" class="drop-zone rounded-2xl p-10 text-center cursor-pointer bg-white">
+            <div id="dropZone" class="drop-zone rounded-2xl p-10 text-center cursor-pointer bg-white dark:bg-slate-900">
                 <input type="file" id="csvInput" accept=".csv" class="hidden">
                 <div class="flex flex-col items-center">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-500 rounded-full flex items-center justify-center mb-4">
+                    <div class="w-16 h-16 bg-blue-50 dark:bg-blue-900/30 text-blue-500 rounded-full flex items-center justify-center mb-4">
                         <i class="fas fa-file-csv text-3xl"></i>
                     </div>
-                    <p class="text-lg font-medium text-slate-700">Click or drag CSV file here</p>
+                    <p class="text-lg font-medium">Click or drag CSV file here</p>
                     <p class="text-sm text-slate-400 mt-1">Columns required: ja, en</p>
                 </div>
             </div>
@@ -109,7 +120,7 @@
         function showNotification(message, type) {
             notification.textContent = message;
             notification.className = `block mb-6 p-4 rounded-lg text-center font-medium ${
-                type === 'error' ? 'bg-red-50 text-red-600' : 'bg-green-50 text-green-600'
+                type === 'error' ? 'bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400' : 'bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400'
             }`;
             setTimeout(() => {
                 notification.classList.add('hidden');
@@ -142,9 +153,8 @@
             if (jaIndex === -1 || enIndex === -1) return [];
 
             const results = [];
-            // Basic CSV parser (handles simple commas, doesn't handle quoted commas for simplicity)
             for (let i = 1; i < lines.length; i++) {
-                const cols = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/); // Regex to handle commas inside quotes
+                const cols = lines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/);
                 if (cols[jaIndex] && cols[enIndex]) {
                     results.push({
                         ja: cols[jaIndex].replace(/^"|"$/g, '').trim(),
@@ -161,18 +171,25 @@
 
             items.forEach((item, index) => {
                 const card = document.createElement('div');
-                card.className = 'bg-white rounded-xl p-6 card-shadow flex items-start gap-4 hover:translate-x-1 transition-transform';
+                card.className = 'bg-white dark:bg-slate-900 rounded-xl p-6 md:p-8 card-shadow flex flex-col md:flex-row items-start md:items-center gap-6 hover:shadow-lg transition-all duration-300 border border-transparent dark:border-slate-800';
                 
                 card.innerHTML = `
-                    <div class="flex-grow">
-                        <div class="japanese-text text-2xl font-bold text-slate-800 mb-2 leading-tight">${item.ja}</div>
-                        <div class="text-sm text-slate-500 font-medium">${item.en}</div>
+                    <div class="flex-grow w-full">
+                        <div class="japanese-text text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4 leading-tight">${item.ja}</div>
+                        <div class="text-lg text-slate-500 dark:text-slate-400 font-medium">${item.en}</div>
                     </div>
-                    <button class="speak-btn w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-blue-50 hover:text-blue-500 transition-colors" 
-                            title="Speak Japanese" 
-                            data-text="${item.ja.replace(/"/g, '&quot;')}">
-                        <i class="fas fa-volume-up text-xl"></i>
-                    </button>
+                    <div class="flex gap-2 self-end md:self-center">
+                        <button class="copy-btn w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-blue-500 transition-colors" 
+                                title="Copy Japanese Text" 
+                                data-text="${item.ja.replace(/"/g, '&quot;')}">
+                            <i class="fas fa-copy text-lg"></i>
+                        </button>
+                        <button class="speak-btn w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 dark:bg-slate-800 text-slate-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-blue-500 transition-colors" 
+                                title="Speak Japanese" 
+                                data-text="${item.ja.replace(/"/g, '&quot;')}">
+                            <i class="fas fa-volume-up text-xl"></i>
+                        </button>
+                    </div>
                 `;
                 contentList.appendChild(card);
             });
@@ -183,6 +200,34 @@
                     speakJapanese(btn.getAttribute('data-text'), btn);
                 });
             });
+
+            // Add event listeners for copy
+            document.querySelectorAll('.copy-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    copyToClipboard(btn.getAttribute('data-text'), btn);
+                });
+            });
+        }
+
+        function copyToClipboard(text, btn) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                const icon = btn.querySelector('i');
+                icon.classList.remove('fa-copy');
+                icon.classList.add('fa-check', 'text-green-500');
+                
+                setTimeout(() => {
+                    icon.classList.remove('fa-check', 'text-green-500');
+                    icon.classList.add('fa-copy');
+                }, 2000);
+            } catch (err) {
+                showNotification('Could not copy text.', 'error');
+            }
+            document.body.removeChild(textArea);
         }
 
         function speakJapanese(text, btn) {
@@ -191,29 +236,25 @@
                 return;
             }
 
-            // Cancel any current speech
             window.speechSynthesis.cancel();
 
             const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'ja-JP';
-            utterance.rate = 0.9; // Slightly slower for clarity
+            utterance.rate = 0.9;
             
-            // Visual feedback
-            btn.classList.add('bg-blue-100', 'text-blue-600');
-            btn.classList.remove('bg-slate-50', 'text-slate-400');
+            btn.classList.add('bg-blue-100', 'dark:bg-blue-900/50', 'text-blue-600', 'dark:text-blue-400');
+            btn.classList.remove('bg-slate-50', 'dark:bg-slate-800', 'text-slate-400');
 
             utterance.onend = () => {
-                btn.classList.remove('bg-blue-100', 'text-blue-600');
-                btn.classList.add('bg-slate-50', 'text-slate-400');
+                btn.classList.remove('bg-blue-100', 'dark:bg-blue-900/50', 'text-blue-600', 'dark:text-blue-400');
+                btn.classList.add('bg-slate-50', 'dark:bg-slate-800', 'text-slate-400');
             };
 
-            utterance.onerror = (event) => {
-                console.error('SpeechSynthesis error:', event);
-                btn.classList.remove('bg-blue-100', 'text-blue-600');
-                btn.classList.add('bg-slate-50', 'text-slate-400');
+            utterance.onerror = () => {
+                btn.classList.remove('bg-blue-100', 'dark:bg-blue-900/50', 'text-blue-600', 'dark:text-blue-400');
+                btn.classList.add('bg-slate-50', 'dark:bg-slate-800', 'text-slate-400');
             };
 
-            // Try to find a Japanese voice
             const voices = window.speechSynthesis.getVoices();
             const jaVoice = voices.find(v => v.lang.startsWith('ja'));
             if (jaVoice) utterance.voice = jaVoice;
@@ -221,7 +262,6 @@
             window.speechSynthesis.speak(utterance);
         }
 
-        // Voice initialization fix for Chrome
         window.speechSynthesis.getVoices();
     </script>
 </body>

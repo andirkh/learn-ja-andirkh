@@ -253,10 +253,63 @@ Zero: Usually zero (ゼロ) or rei (零) in formal contexts (e.g., phone numbers
 
 ## kosakata benda
 
-- 時計,Tokei,Jam / Jam tangan ⌚
-- 鍵,Kagi,Kunci 🔑
-- 携帯,Keitai,HP / Ponsel 📱
-- 傘,Kasa,Payung ☂️
+- 時計,Tokei,Jam / Jam tangan ⌚  
+- 鍵,Kagi,Kunci 🔑  
+- 携帯,Keitai,HP / Ponsel 📱  
+- 傘,Kasa,Payung ☂️  
+- 財布,Saifu,Dompet 💼  
+- ペン,Pen,Pena ✒️  
+- 鉛筆,Enpitsu,Pensil ✏️  
+- 消しゴム,Keshigomu,Penghapus 🧽  
+- ノート,Nooto,Buku catatan 📓  
+- 本,Hon,Buku 📖  
+- 新聞,Shinbun,Koran 🗞️  
+- 雑誌,Zasshi,Majalah 📚  
+- 眼鏡,Megane,Kacamata 👓  
+- テレビ,Terebi,Televisi 📺  
+- 冷蔵庫,Reizouko,Kulkas ❄️  
+- 電子レンジ,Denshi renji,Microwave 🍲  
+- 電気,Denki,Lampu / Listrik 💡  
+- 扇風機,Senpuuki,Kipas angin 🌀  
+- エアコン,Eakon,AC ❄️🔥  
+- ベッド,Beddo,Ranjang 🛏️  
+- 机,Tsukue,Meja 🪑  
+- 椅子,Isu,Kursi 🪑  
+- ドア,Doa,Pintu 🚪  
+- 窓,Mado,Jendela 🪟  
+- 靴,Kutsu,Sepatu 👟  
+- 靴下,Kutsushita,Kaos kaki 🧦  
+- 帽子,Boushi,Topi 🧢  
+- コート,Kooto,Mantel / Jaket tebal 🧥  
+- バッグ,Baggu,Tas 🎒  
+- 水筒,Suidou,Botol minum / Termos 🫙  
+- コップ,Koppu,Gelas 🥤  
+- 皿,Sara,Piring 🍽️  
+- 箸,Hashi,Sumpit 🥢  
+- スプーン,Supuun,Sendok 🥄  
+- ナイフ,Naifu,Pisau dapur 🔪  
+- 包丁,Houchou,Pisau masak (pisau dapur besar) 🔪  
+- 冷凍庫,Reitouko,Freezer ❄️  
+- 電話,Denwa,Telepon rumah 📞  
+- 鏡,Kagami,Cermin 🪞  
+- 歯ブラシ,Ha burashi,Sikat gigi 🪥  
+- タオル,Touru,Handuk 🛁  
+- 石鹸,Sekken,Sabun 🧼  
+- シャンプー,Shanpuu,Sampo 💆‍♀️  
+- ベルト,Beruto,Sabuk pinggang 🪢  
+- リモコン,Rimokon,Remote control 📡  
+- 充電器,Juudenki,Charger 🔌  
+- ラジオ,Rajio,Radio 📻  
+- 懐中電灯,Kaichuudentou,Senter 🔦  
+- ハンカチ,Hankachi,Saputangan 🧻  
+- ティッシュ,Tisshu,Tisu 🧻  
+- ごみ箱,Gomibako,Tempat sampah 🗑️  
+- 掃除機,Soujiki,Vacuum cleaner 🌀  
+- バケツ,Baketsu,Ember 🪣  
+- モップ,Moppu,Mop 🧹  
+- ほうき,Houki,Sapu lidi 🧹  
+- 電池,Denchi,Baterai 🔋
+
 
 ## kata sifat (keiyoushi)
 
@@ -299,6 +352,180 @@ Kono kuruma wa yuumei dewa arimasen. (Mobil ini tidak terkenal.)
 
 Sono machi wa kirei dewa arimasen. (Kota itu tidak bersih/bagus.)
 
+### contoh contoh kata sifat i-adjective :
+
+1. 高い,Takai,Mahal / Tinggi  
+2. 安い,Yasui,Murah  
+3. 大きい,Ōkii,Besar  
+4. 小さい,Chiisai,Kecil  
+5. 新しい,Atarashii,Baru  
+6. 古い,Furui,Tua (benda)  
+7. 暑い,Atsui,Panas (cuaca)  
+8. 熱い,Atsui,Panas (benda)  
+9. 寒い,Samui,Dingin (cuaca)  
+10. 冷たい,Tsumetai,Dingin (benda)  
+11. 難しい,Muzukashii,Sulit  
+12. 易しい,Yasashii,Mudah  
+13. 面白い,Omoshiroi,Menarik  
+14. つまらない,Tsumaranai,Membosankan  
+15. 忙しい,Isogashii,Sibuk  
+16. 珍しい,Mezurashii,Langka  
+17. 早い,Hayai,Cepat / Awal  
+18. 遅い,Osoi,Lambat  
+19. 軽い,Karui,Ringan  
+20. 重い,Omoi,Berat  
+21. 長い,Nagai,Panjang  
+22. 短い,Mijikai,Pendek  
+23. 広い,Hiroi,Luas  
+24. 狭い,Semai,Sempit  
+25. 明るい,Akarui,Terang  
+26. 暗い,Kurai,Gelap  
+27. 強い,Tsuyoi,Kuat  
+28. 弱い,Yowai,Lemah  
+29. 厚い,Atsui,Tebal  
+30. 薄い,Usui,Tipis  
+31. 深い,Fukai,Dalam  
+32. 浅い,Asai,Dangkal  
+33. 赤い,Akai,Merah  
+34. 青い,Aoi,Biru  
+35. 白い,Shiroi,Putih  
+36. 黒い,Kuroi,Hitam  
+37. 黄色い,Kiiroi,Kuning  
+38. 茶色い,Chairoi,Coklat  
+39. 灰色い,Haiiroi,Abu-abu  
+40. 悪い,Warui,Buruk  
+41. 良い,Yoi,Baik  
+42. いい,Ii,Baik  
+43. かわいい,Kawaii,Imut  
+44. 恐ろしい,Osoroshii,Mengerikan  
+45. うるさい,Urusai,Berisik  
+46. おいしい,Oishii,Enak  
+47. まずい,Mazui,Tidak enak  
+48. 甘い,Amai,Manis  
+49. 辛い,Karai,Pedas  
+50. 酸っぱい,Suppai,Asam  
+51. 苦い,Nigai,Pahit  
+52. 塩辛い,Shiokarai,Asin  
+53. 柔らかい,Yawarakai,Lembut  
+54. 固い,Katai,Keras  
+55. 汚い,Kitanai,Kotor  
+56. 素晴らしい,Subarashii,Luar biasa  
+57. 楽しい,Tanoshii,Menyenangkan  
+58. 悲しい,Kanashii,Sedih  
+59. 嬉しい,Ureshii,Bahagia  
+60. 怖い,Kowai,Menakutkan  
+61. 眠い,Nemui,Mengantuk  
+62. 濃い,Koi,Pekat (warna, rasa)  
+63. 薄い (again, but for taste/color): Usui,Encer / Pucat  
+64. 正しい,Tadashii,Benar  
+65. 間違い,Machigai → noun; correct adj: **間違っている** → not i-adj.  
+→ Ganti dengan: **細い,Hosoi,Tipis (garis, tubuh)** ✅  
+65. 細い,Hosoi,Tipis / Kurus  
+66. 太い,Futoi,Tebal / Gemuk (badan, pohon)  
+67. 若い,Wakai,Muda (usia)  
+68. 老い,Oi → not used alone; use **年を取った** → not i-adj.  
+→ Ganti dengan: **近い,Chikai,Dekat** ✅  
+68. 近い,Chikai,Dekat  
+69. 遠い,Tooi,Jauh  
+70. 多い,Ooi,Banyak  
+71. 少ない,Sukunai,Sedikit  
+72. 生ぬるい,Nunurui,Hangat tak enak / suam  
+73. 険しい,Kewashii,Curam (gunung)  
+74. 涼しい,Suzushii,Sejuk (cuaca)  
+75. 暖かい,Atatakai,Hangat (cuaca, perasaan)  
+
+### contoh contoh kata sifat na-adjective :
+
+1. 静か,Shizuka,Tenang / Sunyi 🤫  
+2. にぎやか,Nigiyaka,Ramai (suasana) 🎉  
+3. きれい,Kirei,Cantik / Bersih ✨  
+4. 元気,Genki,Sehat / Bersemangat 💪  
+5. 便利,Benri,Praktis / Nyaman 🛠️  
+6. 不便,Fuben,Tidak praktis 🚧  
+7. 簡単,Tanjun,Sederhana / Mudah 🟢  
+8. 複雑,Fukuzatsu,Rumit / Kompleks 🔀  
+9. 大切,Taisetsu,Penting / Berharga ❤️  
+10. 大丈夫,Daijoubu,Tidak apa-apa / Aman ✅  
+11. 必要,Hitsuyou,Perlu / Diperlukan 📋  
+12. 不要,Fuyou,Tidak perlu 🚫  
+13. 危険,Kiken,Berbahaya ⚠️  
+14. 安全,Anzen,Aman 🛡️  
+15. 好き,Suki,Suka ❤️  
+16. 嫌い,Kirai,Tidak suka 😖  
+17. 有名,Yuumei,Terkenal 🌟  
+18. 無名,Mumei,Tidak dikenal 🕵️  
+19. 普通,Futsuu,Biasa / Normal 🔄  
+20. 特別,Tokubetsu,Istimewa 🎁  
+21. 真剣,Shinken,Serius 🎯  
+22. 適当,Tekitou,Asal-asalan / Sembarangan 🤷  
+23. 親切,Shinsetsu,Baik hati 🤗  
+24. 冷淡,Reitan,Dingin (sikap) ❄️  
+25. 熱心,Nesshin,Bersemangat / Antusias 🔥  
+26. 自由,Jiyuu,Bebas 🕊️  
+27. 忙しい → **bukan na-adjective** → ganti dengan:  → **簡単** sudah ada, lanjut:  
+27. 厳しい,Kibishii → **ini i-adjective!** → HINDARI  
+Ganti dengan: **変,Hen,Aneh** ✅  
+27. 変,Hen,Aneh 🤪  
+28. 素敵,Suteki,Indah / Hebat 🌈  
+29. 悪い → i-adjective → ganti  → **立派,Rippa,Mengagumkan / Rapi** ✅  
+28. 立派,Rippa,Mengagumkan 👔  
+29. 恥ずかしい → i-adjective → hindari  → **我慢強い,Gaman-tsuyoi** → campuran, bukan murni na  → Ganti dengan: **無理,Muri,Tidak masuk akal / Paksaan** ✅  
+29. 無理,Muri,Tidak masuk akal / Mustahil 🚫  
+30. 可能,Kanou,Mungkin / Bisa ✅  
+31. 不可能,Fukanou,Tidak mungkin ❌  
+32. 健康,Kenkou,Sehat (fisik) 🏃  
+33. 病気,Byouki,Sakit 🤒  
+34. 幸せ,Shiawase,Bahagia 😊  
+35. 悲しい → i-adjective → hindari  
+→ **満足,Manzoku,Puas** ✅  
+35. 満足,Manzoku,Puas 😌  
+36. 不満,Fuman,Tidak puas 😠  
+37. 意外,Igai,Mengejutkan (dalam arti tak terduga) 🎭  
+38. 当然,Touzen,Wajar / Tentu saja 📏  
+39. 驚き,Odoroki → noun; gunakan **驚いた** → bukan na-adjective  
+→ Ganti dengan: **用心深,Youjinbukai,Hati-hati** ✅  
+39. 用心深,Youjinbukai,Hati-hati 🐾  
+40. 落ち着き,Ochitsuki → noun; gunakan **落ち着いた** → tapi ini bentuk verb  → Ganti dengan: **真面目,Majime,Serius / Rajin 📚** ✅  
+40. 真面目,Majime,Serius / Rajin  
+41. 遊び,Asobi → noun   → Ganti dengan: **不健康,Fukenkou,Tidak sehat 🍔** ✅  
+41. 不健康,Fukenkou,Tidak sehat  
+42. 清潔,Seiketsu,Bersih (higienis) 🧼  
+43. 不潔,Fuketsu,Kotor (higienis) 🦠  
+44. 明確,Meikaku,Jelas / Tegas ✅  
+45. 曖昧,Aimai,Ambigu / Samar ❓  
+46. 現実的,Genjitsuteki,Realistis 🌍  
+47. 理想的,Risouteki,Ideal 🌠  
+48. 効果的,Koukateki,Efektif 💡  
+49. 無駄,Muda,Sia-sia 🗑️  
+50. 賢い → i-adjective → hindari  → Ganti dengan: **知的,Chiteki,Intelektual 🧠** ✅  
+50. 知的,Chiteki,Intelektual  
+51. 感情的,Kanjouteki,Emosional 😢  
+52. 冷静,Reisei,Tenang (emosi) 🧊  
+53. 楽観的,Rakkanteki,Optimis ☀️  
+54. 悲観的,Hikanteki,Pesimis ☁️  
+55. 社交的,Shakouteki,Sosial / Ramah 🤝  
+56. 内向的,Naikouteki,Introvert 🧘  
+57. 外向的,Gaikouteki,Ekstrovert 🎤  
+58. 勇敢,Yuukan,Pemberani 🦁  
+59. 臆病,Okubyou,Pengecut 🐭  
+60. 誠実,Seijitsu,Jujur / Tulus 💯  
+61. 不誠実,Fuseijitsu,Tidak jujur 🎭  
+62. 柔軟,Junan,Fleksibel 🌀  
+63. 頑固,Ganko,Keras kepala 🐂  
+64. 謙虚,Kenkyo,Rendah hati 🙇  
+65. 傲慢,Goman,Sombong 😏  
+66. 忍耐強い → sering dianggap na, tapi sebenarnya frasa → ganti → **平和,Heiwa,Damai ☮️** ✅  
+66. 平和,Heiwa,Damai  
+67. 戦争的,Sensouteki,Agresif / Perang ⚔️  
+68. 実用的,Jitsuyouteki,Praktis (fungsional) 🛠️  
+69. 装飾的,Soushokuteki,Ornamen / Hiasan 💎  
+70. 無関心,Mukanshin,Tidak peduli 😶  
+71. 熱心,Nesshin,Semangat tinggi 🔥 *(sudah ada? Tidak, baru disebut tapi belum di-list)* → tambahkan  
+71. 熱心,Nesshin,Bersemangat  
+72. 無気力,Mukiryoku,Lemah semangat 💤  
+73. 自信,Jishin,Percaya diri 💪  
+74. 不安,Fuan,Cemas / Gelisah 😰  
+75. 安心,Anshin,Tenang (perasaan) 😌  
 
 ## Kata kerja 
 

@@ -1,0 +1,441 @@
+﻿\documentclass[12pt, a4paper]{article}
+
+% --- Packages ---
+\usepackage[margin=2cm]{geometry}
+\usepackage{fontspec}
+\usepackage[most]{tcolorbox}
+\usepackage{xcolor}
+\usepackage{setspace}
+
+% --- Font Configuration ---
+% Pastikan "Noto Sans JP" terpasang di sistem macOS kamu
+\setmainfont{Noto Sans JP}
+\newfontfamily\japanese{Noto Sans JP}
+
+% --- Color Palette (Kids Style) ---
+\definecolor{TitleColor}{HTML}{FF6B6B}
+\definecolor{BoxBlue}{HTML}{E3F2FD}
+\definecolor{BorderBlue}{HTML}{2196F3}
+\definecolor{BoxGreen}{HTML}{E8F5E9}
+\definecolor{BorderGreen}{HTML}{4CAF50}
+\definecolor{FuriganaColor}{HTML}{666666}
+\definecolor{RomajiColor}{HTML}{1A237E}
+
+% --- Macros for Learning Japanese ---
+% \jpword{KANJI}{FURIGANA}{ROMAJI}
+\newcommand{\jpword}[3]{%
+    \begin{tabular}{@{}c@{}}
+        {\fontsize{9}{9}\selectfont \color{FuriganaColor} #2} \\[-0.2ex] % Furigana (Small)
+        {\fontsize{22}{22}\selectfont \bfseries #1} \\[-0.4ex]            % Kanji/Kana (Big & Bold)
+        {\fontsize{11}{11}\selectfont \color{RomajiColor} #3}           % Romaji (Normal)
+    \end{tabular}\hspace{0.2em}
+}
+
+% Macro untuk partikel atau kata pendek tanpa furigana
+\newcommand{\jpkana}[2]{%
+    \begin{tabular}{@{}c@{}}
+        \phantom{\fontsize{9}{9}\selectfont x} \\[-0.2ex]
+        {\fontsize{22}{22}\selectfont \bfseries #1} \\[-0.4ex]
+        {\fontsize{11}{11}\selectfont \color{RomajiColor} #2}
+    \end{tabular}\hspace{0.2em}
+}
+
+% --- Custom Box Styles ---
+\newtcolorbox{conversationbox}[2]{
+    colback=#1,
+    colframe=#2,
+    arc=5mm,
+    boxrule=1.5pt,
+    left=15pt,
+    right=15pt,
+    top=10pt,
+    bottom=10pt,
+    enhanced,
+    drop shadow
+}
+
+% --- Document Start ---
+\begin{document}
+
+% Book Title
+\begin{center}
+    {\fontsize{30}{30}\selectfont \color{TitleColor} \bfseries Andi - Japanese Handbook} \\
+    \vspace{1cm}
+    \vspace{0.5cm}
+    {\Large \bfseries Bab 1: Chatting with a Stranger on Your Trip in Japan}
+    \vspace{0.5cm}
+\end{center}
+
+\setstretch{2.0}
+
+% --- Conversation Start ---
+
+% Line 1
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{こんにちは}{}{Konnichiwa}。
+    \jpword{今日}{きょう}{Kyou} \jpkana{は}{wa}
+    \jpword{旅行}{りょこう}{ryokou} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Halo. Apakah hari ini Anda sedang berwisata?}
+\end{conversationbox}
+
+% Line 2
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{はい}{Hai}、
+    \jpword{旅行}{りょこう}{ryokou} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Ya, saya sedang berwisata.}
+\end{conversationbox}
+
+% Line 3
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{どちら}{}{Dochira} \jpkana{の}{no}
+    \jpword{国}{くに}{kuni} \jpkana{から}{kara}
+    \jpword{いらっしゃった}{}{irasshatta} \jpkana{ん}{n} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Anda datang dari negara mana?}
+\end{conversationbox}
+
+% Line 4
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{インドネシア}{}{Indoneshia} \jpkana{から}{kara}
+    \jpword{来}{き}{ki} \jpkana{ました}{mashita}。 \\
+    \textit{\color{black!70} Saya datang dari Indonesia.}
+\end{conversationbox}
+
+% Line 5
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{日本}{にほん}{Nihon} \jpkana{は}{wa}
+    \jpword{初}{はじ}{haji} \jpkana{めて}{mete} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Apakah ini pertama kalinya Anda ke Jepang?}
+\end{conversationbox}
+
+% Line 6
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{はい}{Hai}、
+    \jpword{初}{はじ}{haji} \jpkana{めて}{mete} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Ya, pertama kalinya.}
+\end{conversationbox}
+
+% Line 7
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{今日}{きょう}{Kyou} \jpkana{は}{wa}
+    \jpword{どちら}{}{dochira} \jpkana{まで}{made}
+    \jpword{行}{い}{i} \jpkana{かれる}{kareru} \jpkana{ん}{n} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Hari ini Anda mau pergi sampai ke mana?}
+\end{conversationbox}
+
+% Line 8
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{京都}{きょうと}{Kyouto} \jpkana{まで}{made}
+    \jpword{行}{い}{i} \jpkana{きます}{kimasu}。 \\
+    \textit{\color{black!70} Saya mau pergi sampai ke Kyoto.}
+\end{conversationbox}
+
+% Line 9
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{そうですか}{Sou desu ka}。
+    \jpword{私}{わたし}{Watashi} \jpkana{は}{wa}
+    \jpword{名古屋}{なごや}{Nagoya} \jpkana{まで}{made}
+    \jpword{行}{い}{i} \jpkana{きます}{kimasu}。 \\
+    \textit{\color{black!70} Begitu ya. Saya akan pergi sampai ke Nagoya.}
+\end{conversationbox}
+
+% Line 10
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{到着}{とうちゃく}{Touchaku} \jpkana{したら}{shitara}、
+    \jpword{どこ}{}{doko} \jpkana{に}{ni}
+    \jpword{行}{い}{i} \jpkana{かれる}{kareru}
+    \jpword{予定}{よてい}{yotei} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Setibanya di sana, rencananya Anda mau pergi ke mana?}
+\end{conversationbox}
+
+% Line 11
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{桜}{さくら}{Sakura} \jpkana{が}{ga}
+    \jpword{有名}{ゆうめい}{yuumei} \jpkana{な}{na}
+    \jpword{お寺}{おてら}{otera} \jpkana{に}{ni}
+    \jpword{行}{い}{u} \jpword{予定}{よてい}{yotei} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Rencananya saya akan pergi ke kuil yang terkenal dengan Sakuranya.}
+\end{conversationbox}
+
+% Line 12
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{楽}{たの}{tano} \jpkana{しそうですね}{shisou desu ne}。 \\
+    \textit{\color{black!70} Sepertinya menyenangkan ya.}
+\end{conversationbox}
+
+% Line 13
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{それにしても}{Sore ni shitemo}、
+    \jpword{日本語}{にほんご}{Nihongo} \jpkana{が}{ga}
+    \jpword{とても}{}{totemo}
+    \jpword{上手}{じょうず}{jouzu} \jpkana{ですね}{desu ne}。 \\
+    \textit{\color{black!70} Ngomong-ngomong, bahasa Jepang Anda sangat pintar ya.}
+\end{conversationbox}
+
+% Line 14
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{いつ}{}{Itsu} \jpkana{から}{kara}
+    \jpword{日本語}{にほんご}{Nihongo} \jpkana{を}{o}
+    \jpword{勉強}{べんきょう}{benkyou} \jpkana{している}{shite iru} \jpkana{ん}{n} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Sejak kapan Anda belajar bahasa Jepang?}
+\end{conversationbox}
+
+% Line 15
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{1年前}{いちねんまえ}{Ichi-nen mae} \jpkana{から}{kara}
+    \jpword{勉強}{べんきょう}{benkyou} \jpkana{しています}{shite imasu}。 \\
+    \textit{\color{black!70} Saya sudah belajar sejak satu tahun yang lalu.}
+\end{conversationbox}
+
+% Line 16
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{なんで}{}{Nande}
+    \jpword{日本語}{にほんご}{Nihongo} \jpkana{の}{no}
+    \jpword{勉強}{べんきょう}{benkyou} \jpkana{を}{o}
+    \jpword{始}{はじ}{haji} \jpkana{めた}{meta} \jpkana{ん}{n} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Kenapa Anda mulai belajar bahasa Jepang?}
+\end{conversationbox}
+
+% Line 17
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{日本}{にほん}{Nihon} \jpkana{の}{no}
+    \jpword{文化}{ぶんか}{bunka} \jpword{と}{to}{to}
+    \jpword{歴史}{れきし}{rekishi} \jpkana{に}{ni}
+    \jpword{興味}{きょうみ}{kyoumi} \jpkana{が}{ga}
+    \jpword{ある}{}{aru} \jpkana{から}{kara} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Karena saya punya ketertarikan pada budaya dan sejarah Jepang.}
+\end{conversationbox}
+
+% Line 18
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{日本}{にほん}{Nihon} \jpkana{の}{no}
+    \jpword{食}{た}{ta} \jpword{べ}{}{be} \jpword{物}{もの}{mono} \jpkana{は}{wa}
+    \jpword{好}{す}{su} \jpkana{き}{ki} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Apakah Anda suka makanan Jepang?}
+\end{conversationbox}
+
+% Line 19
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{はい}{Hai}、
+    \jpword{大好}{だいす}{daisu} \jpkana{き}{ki} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Ya, suka sekali.}
+\end{conversationbox}
+
+% Line 20
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{今まで}{いままで}{Ima made}
+    \jpword{日本}{にほん}{Nihon} \jpkana{で}{de}
+    \jpword{食}{た}{ta} \jpkana{べた}{beta} \jpword{もの}{}{mono} \jpkana{の}{no}
+    \jpword{中}{なか}{naka} \jpkana{で}{de}、 \\
+    \jpword{何}{なに}{nani} \jpkana{が}{ga}
+    \jpword{一番}{いちばん}{ichiban}
+    \jpword{おいしかった}{}{oishikatta} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Di antara makanan yang sudah Anda makan di Jepang sejauh ini, apa yang paling enak?}
+\end{conversationbox}
+
+% Line 21
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{東京}{とうきょう}{Toukyou} \jpkana{で}{de}
+    \jpword{食}{た}{ta} \jpkana{べた}{beta}
+    \jpword{寿司}{すし}{sushi} \jpkana{が}{ga}
+    \jpword{一番}{いちばん}{ichiban}
+    \jpword{おいしかったです}{}{oishikatta desu}。 \\
+    \textit{\color{black!70} Sushi yang saya makan di Tokyo adalah yang paling enak.}
+\end{conversationbox}
+
+% Line 22
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    （\jpword{まもなく}{}{Mamonaku}、
+    \jpword{名古屋}{なごや}{Nagoya}、
+    \jpword{名古屋}{なごや}{Nagoya} \jpkana{です}{desu}。） \\
+    \textit{\color{black!70} (Sebentar lagi, Nagoya, Nagoya.)}
+\end{conversationbox}
+
+% Line 23
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{あっ}{A}、
+    \jpword{もう}{}{mou}
+    \jpword{着}{つ}{tsu} \jpkana{きました}{kimashita}。 \\
+    \textit{\color{black!70} Ah, sudah sampai.}
+\end{conversationbox}
+
+% Line 24
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{新幹線}{しんかんせん}{Shinkansen} \jpkana{は}{wa}
+    \jpword{速}{はや}{haya} \jpkana{いですね}{i desu ne}。 \\
+    \textit{\color{black!70} Kereta Shinkansen cepat ya.}
+\end{conversationbox}
+
+% Line 25
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{日本旅行}{にほんりょこう}{Nihon ryokou}、
+    \jpword{楽}{たの}{tano} \jpkana{しんでください}{shinde kudasai}。 \\
+    \textit{\color{black!70} Selamat menikmati perjalanan Jepang Anda.}
+\end{conversationbox}
+
+% Line 26
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{それでは}{Soredewa}、
+    \jpword{失礼}{しつれい}{shitsurei} \jpkana{します}{shimasu}。 \\
+    \textit{\color{black!70} Kalau begitu, saya permisi.}
+\end{conversationbox}
+
+\newpage
+
+% Book Title & Chapter
+\begin{center}
+    {\fontsize{30}{30}\selectfont \color{TitleColor} \bfseries Andi - Japanese Handbook} \\
+    \vspace{0.8cm}
+    \vspace{0.5cm}
+    {\Large \bfseries Bab 2: Help a Lost Tourist in Your Town}
+    \vspace{0.5cm}
+\end{center}
+
+\setstretch{2.2}
+
+% --- Conversation Start ---
+
+% Line 1 & 2
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{あ}{a}、\jpword{すみません}{}{sumimasen}。
+    \jpword{今}{いま}{ima}、\jpkana{ちょっと}{chotto} \jpword{いい}{}{ii} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Ah, permisi. Apakah sekarang ada waktu sebentar?}
+\end{conversationbox}
+
+% Line 3 & 4
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{美術館}{びじゅつかん}{Bijutsukan} \jpkana{に}{ni} \jpword{行}{い}{i} \jpkana{きたい}{kitai} \jpkana{ん}{n} \jpkana{です}{desu} \jpkana{が}{ga}、
+    \jpkana{この}{kono} \jpword{近く}{ちか}{chika} \jpkana{に}{ni} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Saya ingin pergi ke museum seni, apakah ada di dekat sini?}
+\end{conversationbox}
+
+% Line 5
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{はい}{Hai}。\jpkana{あります}{arimasu} \jpkana{よ}{yo}。 \\
+    \textit{\color{black!70} Ya, ada kok.}
+\end{conversationbox}
+
+% Line 6
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{歩}{ある}{aru} \jpkana{いて}{ite} \jpword{何分}{なんぷん}{nanpun} \jpkana{ぐらい}{gurai} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Kira-kira berapa menit kalau berjalan kaki?}
+\end{conversationbox}
+
+% Line 7
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{歩}{ある}{aru} \jpkana{いて}{ite} \jpkana{20分}{nijuppun} \jpkana{ぐらい}{gurai} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Kira-kira 20 menit berjalan kaki.}
+\end{conversationbox}
+
+% Line 8 & 9
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{結構}{けっこう}{Kekkou} \jpword{遠}{とお}{too} \jpkana{いですね}{i desu ne}。
+    \jpword{タクシー}{}{takushii} \jpkana{は}{wa} \jpword{高}{たか}{taka} \jpkana{い}{i} \jpkana{です}{desu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Cukup jauh ya. Apakah taksi mahal?}
+\end{conversationbox}
+
+% Line 10
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{タクシー}{}{Takushii} \jpkana{は}{wa} \jpkana{ちょっと}{chotto} \jpword{高}{たか}{taka} \jpkana{い}{i} \jpkana{と}{to} \jpword{思}{おも}{omo} \jpkana{います}{imasu}。 \\
+    \textit{\color{black!70} Menurut saya taksi agak mahal.}
+\end{conversationbox}
+
+% Line 11
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{電車}{でんしゃ}{Densha} \jpkana{とか}{toka} \jpword{バス}{}{basu} \jpkana{は}{wa} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Apakah ada kereta atau bus?}
+\end{conversationbox}
+
+% Line 12
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{バス}{}{Basu} \jpkana{は}{wa} \jpkana{ありません}{arimasen} \jpkana{が}{ga}、\jpword{電車}{でんしゃ}{densha} \jpkana{は}{wa} \jpkana{あります}{arimasu} \jpkana{よ}{yo}。 \\
+    \textit{\color{black!70} Bus tidak ada, tapi kalau kereta ada.}
+\end{conversationbox}
+
+% Line 13
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{駅}{えき}{Eki} \jpkana{は}{wa} \jpkana{どこ}{doko} \jpkana{に}{ni} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Stasiunnya ada di mana?}
+\end{conversationbox}
+
+% Line 14 & 15
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{この}{Kono} \jpword{道}{みち}{michi} \jpkana{を}{o} \jpkana{まっすぐ}{massugu} \jpword{行}{い}{i} \jpkana{って}{tte}、
+    \jpword{角}{かど}{kado} \jpkana{を}{o} \jpword{右}{みぎ}{migi} \jpkana{に}{ni} \jpword{曲}{ま}{ma} \jpkana{がると}{garu to}、\jpword{駅}{えき}{eki} \jpkana{が}{ga} \jpkana{あります}{arimasu}。 \\
+    \textit{\color{black!70} Jalan lurus di jalan ini, lalu belok kanan di pojokan, maka akan ada stasiun.}
+\end{conversationbox}
+
+% Line 16, 17, 18
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpword{ありがとう}{}{Arigatou} \jpkana{ございます}{gozaimasu}。
+    \jpkana{この}{kono} \jpword{街}{まち}{machi} \jpkana{で}{de} \jpword{有名}{ゆうめい}{yuumei} \jpkana{な}{na} \jpword{観光地}{かんこうち}{kankouchi} \jpkana{や}{ya}、
+    \jpkana{おすすめ}{osusume} \jpkana{の}{no} \jpword{場所}{ばしょ}{basho} \jpkana{は}{wa} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Terima kasih. Di kota ini, apakah ada tempat wisata terkenal atau tempat yang direkomendasikan?}
+\end{conversationbox}
+
+% Line 19, 20, 21
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{大}{おお}{Oo} \jpkana{きな}{kina} \jpword{広場}{ひろば}{hiroba} \jpkana{が}{ga} \jpword{有名}{ゆうめい}{yuumei} \jpkana{です}{desu}。
+    \jpkana{いろいろな}{iroirona} \jpword{お店}{おみせ}{omise} \jpkana{が}{ga} \jpkana{あって}{atte} \jpword{面白}{おもしろ}{omoshiro} \jpkana{いですよ}{i desu yo}。
+    \jpkana{ときどき}{tokidoki} \jpword{イベント}{}{ibento} \jpkana{も}{mo} \jpkana{あります}{arimasu}。 \\
+    \textit{\color{black!70} Alun-alun besar terkenal di sini. Ada banyak toko dan menarik lho. Terkadang ada acara juga.}
+\end{conversationbox}
+
+% Line 22
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{わかりました}{Wakarimashita}。\jpword{あと}{}{ato} \jpkana{で}{de} \jpword{行}{い}{i} \jpkana{って}{tte} \jpkana{みます}{mimasu}。 \\
+    \textit{\color{black!70} Saya mengerti. Nanti saya akan coba ke sana.}
+\end{conversationbox}
+
+% Line 23, 24, 25
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{そういえば}{Sou ieba}、\jpkana{のど}{nodo} \jpkana{が}{ga} \jpkana{かわいた}{kawaita} \jpkana{ので}{node}
+    \jpword{水}{みず}{mizu} \jpkana{を}{o} \jpword{買}{か}{ka} \jpkana{いたい}{itai} \jpkana{ん}{n} \jpkana{です}{desu} \jpkana{が}{ga}、
+    \jpkana{この}{kono} \jpword{近く}{ちか}{chika} \jpkana{に}{ni} \jpword{スーパー}{}{suupaa} \jpkana{とか}{toka} \jpword{コンビニ}{}{konbini} \jpkana{は}{wa} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Ngomong-ngomong, karena haus saya ingin beli air, apakah ada supermarket atau minimarket dekat sini?}
+\end{conversationbox}
+
+% Line 26, 27
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpkana{はい}{Hai}。\jpkana{あの}{ano} \jpword{黄色}{きいろ}{kiiro} \jpkana{い}{i} \jpword{看板}{かんばん}{kanban}、\jpword{見}{み}{mi} \jpkana{えます}{emasu} \jpkana{か}{ka}？
+    \jpkana{あれ}{are} \jpkana{が}{ga} \jpword{コンビニ}{}{konbini} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Ya. Papan iklan kuning itu, apakah terlihat? Itu adalah minimarket.}
+\end{conversationbox}
+
+% Line 28, 29, 30
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{わかりました}{Wakarimashita}。\jpword{ありがとう}{}{arigatou} \jpkana{ございます}{gozaimasu}。
+    \jpkana{あ}{a}、\jpkana{もうすぐ}{mousugu} \jpword{お昼}{おひる}{ohiru} \jpkana{ですね}{desu ne}。
+    \jpkana{この}{kono} \jpword{近く}{ちか}{chika} \jpkana{に}{ni} \jpkana{おすすめ}{osusume} \jpkana{の}{no} \jpword{レストラン}{}{resutoran} \jpkana{や}{ya} \jpword{カフェ}{}{kafe} \jpkana{は}{wa} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Saya mengerti. Terima kasih. Ah, sudah hampir jam makan siang ya. Apakah ada restoran atau kafe yang direkomendasikan di dekat sini?}
+\end{conversationbox}
+
+% Line 31, 32
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{駅}{えき}{Eki} \jpkana{の}{no} \jpword{近く}{ちか}{chika} \jpkana{に}{ni} 『Pomodoro』 \jpkana{という}{to iu} \jpword{イタリアン}{}{itarian} \jpword{レストラン}{}{resutoran} \jpkana{が}{ga} \jpkana{あります}{arimasu}。
+    \jpword{ピザ}{}{Piza} \jpkana{が}{ga} \jpkana{とても}{totemo} \jpword{おいしい}{}{oishii} \jpkana{ので}{node} \jpkana{おすすめ}{osusume} \jpkana{です}{desu}。 \\
+    \textit{\color{black!70} Di dekat stasiun ada restoran Italia bernama 'Pomodoro'. Pizanya sangat enak, jadi saya rekomendasikan.}
+\end{conversationbox}
+
+% Line 33, 34, 35
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{あっ}{A}、\jpkana{どうしよう}{dou shiyou}…
+    \jpword{スマホ}{}{sumaho} \jpkana{の}{no} \jpword{バッテリー}{}{batterii} \jpkana{が}{ga} \jpkana{もうすぐ}{mousugu} \jpkana{なくなります}{nakunarimasu}。
+    \jpkana{この}{kono} \jpword{近く}{ちか}{chika} \jpkana{に}{ni} \jpword{スマホ}{}{sumaho} \jpkana{を}{o} \jpword{充電}{じゅうでん}{juuden} \jpword{できる}{}{dekiru} \jpword{場所}{ばしょ}{basho} \jpkana{は}{wa} \jpkana{あります}{arimasu} \jpkana{か}{ka}？ \\
+    \textit{\color{black!70} Aduh, bagaimana ini... baterai ponsel saya hampir habis. Apakah ada tempat pengisian daya ponsel di dekat sini?}
+\end{conversationbox}
+
+% Line 36
+\begin{conversationbox}{BoxGreen}{BorderGreen}
+    \jpword{コンビニ}{}{Konbini} \jpkana{で}{de} \jpword{モバイルバッテリー}{}{mobairu batterii} \jpkana{が}{ga} \jpword{買}{か}{ka} \jpkana{える}{eru} \jpkana{と}{to} \jpword{思}{おも}{omo} \jpkana{います}{imasu}。 \\
+    \textit{\color{black!70} Saya rasa Anda bisa membeli baterai portabel di minimarket.}
+\end{conversationbox}
+
+% Line 37, 38, 39
+\begin{conversationbox}{BoxBlue}{BorderBlue}
+    \jpkana{わかりました}{Wakarimashita}。
+    \jpkana{いろいろ}{iroiro} \jpword{教}{おし}{oshi} \jpkana{えて}{ete} \jpkana{くださって}{kudasatte} \jpword{ありがとう}{}{arigatou} \jpkana{ございました}{gozaimashita}。
+    \jpkana{それでは}{Soredewa}、\jpword{失礼}{しつれい}{shitsurei} \jpkana{します}{shimasu}。 \\
+    \textit{\color{black!70} Saya mengerti. Terima kasih banyak telah memberi tahu banyak hal. Kalau begitu, saya permisi.}
+\end{conversationbox}
+
+\end{document}

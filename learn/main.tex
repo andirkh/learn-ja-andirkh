@@ -1,0 +1,101 @@
+﻿\documentclass[12pt, a4paper]{report}
+
+% --- PACKAGES ---
+\usepackage{geometry}
+\geometry{a4paper, margin=2cm}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable}
+\usepackage{parskip}
+\usepackage{mwe}
+\usepackage[zerostyle=b,scaled=.75]{newtxtt}
+\usepackage{booktabs}
+\usepackage{listings}
+
+% --- FONT CONFIGURATION ---
+% Pastikan font Noto Sans JP sudah terinstall di Mac kamu.
+\setmainfont{Arial} % Font utama untuk teks alfabet
+\setCJKmainfont[AutoFakeBold=true, AutoFakeSlant=true]{Noto Sans JP}
+
+% --- CUSTOM COLORS ---
+\definecolor{kanjicolor}{HTML}{1E3A8A}    % Biru gelap untuk kanji
+\definecolor{furicolor}{HTML}{D946EF}     % Magenta untuk furigana
+\definecolor{romacolor}{HTML}{EA580C}     % Oranye gelap untuk romaji
+\definecolor{articolor}{HTML}{047857}     % Hijau untuk bahasa indonesia
+\definecolor{boxbg}{HTML}{FEF9C3}         % Kuning pastel untuk box percakapan
+\definecolor{boxframe}{HTML}{F59E0B}      % Oranye untuk border percakapan
+\definecolor{lessonbg}{HTML}{F0FDF4}      % Hijau pastel untuk lesson
+\definecolor{lessonframe}{HTML}{10B981}   % Hijau terang untuk border lesson
+
+% --- CUSTOM MACROS UNTUK KANJI, FURIGANA, & ROMAJI ---
+% \jpword{furigana}{kanji}{romaji}
+\newcommand{\jpword}[3]{%
+  \begin{tabular}[b]{@{}c@{}}
+    {\fontsize{10}{12}\selectfont\color{furicolor}\sffamily #1} \\[-0.2ex]
+    {\fontsize{24}{28}\selectfont\bfseries\color{kanjicolor} #2} \\[-0.2ex]
+    {\fontsize{12}{14}\selectfont\color{romacolor}\sffamily #3}
+  \end{tabular}%
+  \hspace{0.2em}%
+}
+
+% \jpkana{kana}{romaji} -> Untuk hiragana/katakana yang tidak butuh furigana
+\newcommand{\jpkana}[2]{%
+  \begin{tabular}[b]{@{}c@{}}
+    {\fontsize{10}{12}\selectfont\color{furicolor}\vphantom{あ}} \\[-0.2ex]
+    {\fontsize{24}{28}\selectfont\bfseries\color{kanjicolor} #1} \\[-0.2ex]
+    {\fontsize{12}{14}\selectfont\color{romacolor}\sffamily #2}
+  \end{tabular}%
+  \hspace{0.2em}%
+}
+
+% --- TCOLORBOX STYLES ---
+\newtcolorbox{convobox}[1]{
+    colback=boxbg,
+    colframe=boxframe,
+    boxrule=2pt,
+    arc=5mm,
+    title={\Large\bfseries \sffamily Kalimat #1},
+    fonttitle=\color{white},
+    attach boxed title to top left={xshift=5mm, yshift=-3mm},
+    boxed title style={colback=boxframe, rounded corners},
+    left=5mm, right=5mm, top=7mm, bottom=5mm,
+    breakable
+}
+
+\newtcolorbox{lessonbox}[1]{
+    colback=lessonbg,
+    colframe=lessonframe,
+    boxrule=2pt,
+    arc=5mm,
+    title={\Large\bfseries \sffamily 💡 #1},
+    fonttitle=\color{white},
+    attach boxed title to top center={yshift=-3mm},
+    boxed title style={colback=lessonframe, rounded corners},
+    left=5mm, right=5mm, top=7mm, bottom=5mm,
+    breakable
+}
+
+\begin{document}
+\tableofcontents
+\input{chapters/chapter1.tex}
+\input{chapters/chapter2.tex}
+\input{chapters/chapter3.tex}
+\input{chapters/chapter4.tex}
+\input{chapters/chapter5.tex}
+\input{chapters/chapter6.tex}
+\input{chapters/chapter7.tex}
+\input{chapters/chapter8.tex}
+\input{chapters/chapter9.tex}
+\input{chapters/chapter10.tex}
+\input{chapters/chapter11.tex}
+\input{chapters/chapter12.tex}
+\input{chapters/revisit1.tex}
+\input{chapters/revisit2.tex}
+\input{chapters/revisit3.tex}
+\input{chapters/revisit4.tex}
+
+
+
+\end{document}

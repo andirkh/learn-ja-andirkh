@@ -1,0 +1,95 @@
+﻿% ==========================================
+% FILE: cover.tex
+% Pastikan \usepackage{tikz} sudah ada di main.tex
+% ==========================================
+
+\begin{titlepage}
+\begin{tikzpicture}[remember picture, overlay]
+
+    % --- WARNA BACKGROUND DASAR ---
+    \fill[color=yellow!10] (current page.south west) rectangle (current page.north east);
+
+    % --- DEKORASI POJOK (LINGKARAN WARNA-WARNI) ---
+    \fill[color=orange!30, opacity=0.8] (current page.north west) circle (4cm);
+    \fill[color=blue!20, opacity=0.8] (current page.north east) circle (5cm);
+    \fill[color=green!30, opacity=0.8] (current page.south west) circle (6cm);
+    \fill[color=pink!40, opacity=0.8] (current page.south east) circle (4.5cm);
+    \fill[color=purple!20, opacity=0.6] ([xshift=-2cm, yshift=2cm]current page.east) circle (3cm);
+    \fill[color=teal!20, opacity=0.6] ([xshift=2cm, yshift=-2cm]current page.west) circle (3.5cm);
+
+    % --- FLOATING KANJI & KANA (KATA-KATA DARI PERCAKAPAN) ---
+    % Diatur dengan transparansi agar menjadi watermark yang cantik
+    
+    % Kiri Atas
+    \node[color=blue!50!white, font=\fontsize{35}{40}\selectfont\bfseries, rotate=15, opacity=0.5] 
+        at ([xshift=3.5cm, yshift=-3.5cm]current page.north west) {コンビニ}; % Minimarket
+        
+    % Kanan Atas
+    \node[color=pink!70!white, font=\fontsize{45}{50}\selectfont\bfseries, rotate=-10, opacity=0.6] 
+        at ([xshift=-4cm, yshift=-5cm]current page.north east) {桜}; % Sakura
+        
+    % Kiri Bawah
+    \node[color=orange!60!white, font=\fontsize{40}{45}\selectfont\bfseries, rotate=20, opacity=0.5] 
+        at ([xshift=4cm, yshift=5cm]current page.south west) {ラーメン}; % Ramen
+        
+    % Kanan Bawah
+    \node[color=green!60!black, font=\fontsize{40}{45}\selectfont\bfseries, rotate=-15, opacity=0.4] 
+        at ([xshift=-5cm, yshift=6cm]current page.south east) {温泉}; % Onsen (Air Panas)
+
+    % Tengah Kiri
+    \node[color=purple!40!white, font=\fontsize{35}{40}\selectfont\bfseries, rotate=25, opacity=0.5] 
+        at ([xshift=2.5cm, yshift=1cm]current page.west) {新幹線}; % Shinkansen
+        
+    % Tengah Kanan
+    \node[color=red!40!white, font=\fontsize{35}{40}\selectfont\bfseries, rotate=-25, opacity=0.5] 
+        at ([xshift=-3cm, yshift=-1cm]current page.east) {美味しい}; % Lezat
+        
+    % Atas Tengah
+    \node[color=magenta!40!white, font=\fontsize{30}{35}\selectfont\bfseries, rotate=-5, opacity=0.5] 
+        at ([xshift=0cm, yshift=-2.5cm]current page.north) {いらっしゃいませ}; % Selamat Datang
+
+    % Bawah Tengah
+    \node[color=teal!50!white, font=\fontsize{35}{40}\selectfont\bfseries, rotate=5, opacity=0.6] 
+        at ([xshift=0cm, yshift=3cm]current page.south) {家族旅行}; % Liburan Keluarga
+        
+    % Ekstra floating words
+    \node[color=orange!80!red, font=\fontsize{25}{30}\selectfont\bfseries, rotate=10, opacity=0.4] 
+        at ([xshift=-3cm, yshift=-8cm]current page.north east) {お持ち帰り}; % Take away
+        
+    \node[color=blue!80!cyan, font=\fontsize{25}{30}\selectfont\bfseries, rotate=-15, opacity=0.4] 
+        at ([xshift=4cm, yshift=9cm]current page.south west) {ありがとう}; % Terima kasih
+
+    % --- KOTAK JUDUL UTAMA (DI TENGAH) ---
+    \node[
+        draw=orange!80!black, 
+        fill=white, 
+        line width=5pt, 
+        rounded corners=20pt, 
+        inner sep=25pt, 
+        text width=14cm, 
+        align=center,
+        fill opacity=0.95,
+        text opacity=1
+    ] at (current page.center) {
+        
+        % Judul Utama
+        {\fontsize{50}{60}\selectfont \bfseries \sffamily \color{blue!80!black} ANDI}\\[0.3em]
+        {\fontsize{35}{45}\selectfont \bfseries \sffamily \color{orange!80!black} JAPANESE HANDBOOK}\\[2em]
+        
+        % Garis Pemisah
+        \rule{8cm}{2pt}\\[2em]
+        
+        % Subjudul
+        {\Huge \color{teal!80!black} \textbf{Buku Saku Super Cepat}}\\[0.8em]
+        {\LARGE \color{teal!80!black} \textbf{Panduan Petualangan Keluarga di Jepang}}\\[2.5em]
+        
+        % Ikon / Highlight Materi
+        {\Large \color{purple!80!black} \bfseries 🍱 Konbini • 🍜 Ramen • ☕ Kafe • ⛩️ Kuil}\\[2em]
+        
+        % Footer Kotak
+        {\large \color{gray} \bfseries Menguasai Bahasa Jepang untuk Jalan-jalan!}
+    };
+
+\end{tikzpicture}
+\end{titlepage}
+\clearpage
